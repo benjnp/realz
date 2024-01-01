@@ -34,7 +34,7 @@ export default function Value() {
                 >
                  {
                     data.map((item, i) => {
-                        const [accordionClass, setAccordionClass] = useState(null)
+                        const [accordionClass, setAccordionClass] = useState("")
                         return (
                             <AccordionItem className={`accordion-item ${accordionClass}`} key={i} uuid={i}>
                                 <AccordionItemHeading>

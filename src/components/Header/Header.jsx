@@ -6,10 +6,11 @@ import OutsideClickHandler from 'react-outside-click-handler/build/OutsideClickH
 export default function Header() {
   const [isOpenMenu, setIsOpenMenu] = useState(false)
 
-  function getMenuStyles(menuOpened) {
+  function getMenuStyles(isOpen) {
     if(document.documentElement.clientWidth <= 768) 
-      return {right: !isOpenMenu && "-100%"}
+      return {right: !isOpen && "-100%"}
   }
+
   return (
     <div className="h-wrapper">
         <div className="h-container flexCenter fullWidth">
@@ -24,10 +25,11 @@ export default function Header() {
                     Contact Us
                 </button>
             </div>
-            </OutsideClickHandler>
-            <div className="menu-icon" onClick={() => setIsOpenMenu((prev) => !prev)}>
+            <div className="menu-icon" onClick={() => setIsOpenMenu(prev => !prev)}>
               <BiMenuAltRight size={30} />
             </div>
+            </OutsideClickHandler>
+            
         </div>
         
     </div>

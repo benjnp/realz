@@ -9,8 +9,21 @@
 }
 
 .h-menu {
-    gap: 2rem;
+    color: var(--black);
+    position: absolute;
+    top: 3rem; 
+    right: 4rem;
+    background-color: white;
+    flex-direction: column;
+    font-weight: 500;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    align-items: flex-start;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.05);
+    transition: all 300ms ease-in;
 }
+
 
 /* .h-menu .button {
     padding: 0.5rem;
@@ -23,27 +36,28 @@
 }
 
 .menu-icon {
-    display: none;
+    display: block;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .menu-icon {
-        display: block;
+        display: none;
     }
 
     .h-menu {
-        color: var(--black);
-        position: absolute;
-        top: 3rem; 
-        right: 4rem;
-        background-color: white;
-        flex-direction: column;
-        font-weight: 500;
-        gap: 1rem;
-        padding: 1rem;
-        border-radius: 10px;
-        align-items: flex-start;
-        box-shadow: 0px 4px 4px rgba(0,0,0,0.05);
-        transition: all 300ms ease-in;
+        color: white;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        box-shadow: none;
+        transition: none;
+        background-color: transparent;
+        top: 0;
+        right: 0% !important;
+        align-items: center;
     }
+
+
+    
+
 }

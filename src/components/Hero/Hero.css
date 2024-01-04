@@ -5,16 +5,13 @@
 }
 
 .hero-container {
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-end;
 }
 
 .image-container {
-    width: 30rem;
-    height: 35rem;
-    overflow: hidden;
-    border-radius: 15rem 15rem 0 0;
-    border: 8px solid rgba(255,255,255,0.12);
+    width: 100% !important;
+    height: 30rem !important;
 }
 
 .image-container img {
@@ -22,19 +19,14 @@
     height: 100%;
 }
 
-.hero-left {
+.hero-left, .hero-right {
     gap: 3rem;
+    width: 80%;
 }
 
 .hero-title {
     position: relative;
     z-index: 1;
-}
-
-.hero-title>h1 {
-    font-weight: 600;
-    font-size: 3.8rem;
-    line-height: 4rem;
 }
 
 .orange-circle {
@@ -78,3 +70,96 @@
 .stat>:nth-child(1)>:last-child {
     color: orange;
 }
+
+.hero-title>h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-weight: 500;
+}
+
+.hero-labels {
+    margin-right: 5px;
+}
+
+
+@media (min-width: 425px) {
+    .hero-title>h1 {
+        font-weight: 500;
+        font-size: 3.2rem;
+        line-height: 3.5rem;
+    }
+
+    .hero-container {
+        justify-content: center;
+    }
+
+    .image-container {
+        width: 24rem !important;
+        height: 26rem !important;
+        overflow: hidden;
+        border-radius: 15rem 15rem 0 0;
+        border: 8px solid rgba(255,255,255,0.12);
+    }
+
+}
+
+@media (min-width: 768px) {
+    
+
+    .image-container {
+        width: 22rem !important;
+        height: 25rem !important;
+        overflow: hidden;
+        border-radius: 15rem 15rem 0 0;
+        border: 8px solid rgba(255,255,255,0.12);
+    }
+
+    .hero-left, .hero-right {
+        width: 48%;
+    }
+    
+    .hero-container {
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .hero-title>h1 {
+        font-weight: 600;
+        font-size: 3.8rem;
+        line-height: 4rem;
+    }
+
+    .image-container {
+        width: 25rem !important;
+        height: 30rem !important;
+        overflow: hidden;
+        border-radius: 15rem 15rem 0 0;
+        border: 8px solid rgba(255,255,255,0.12);
+    }
+    
+    .hero-container {
+        justify-content: space-around;
+    }
+}
+
+
+
+/* @media (min-width: 640px) {
+    .hero-title>h1 {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    .image-container {
+        width: 55%;
+        height: 25rem;
+    }
+} */
+
+/* .hero-title>h1 {
+    font-weight: 600;
+    font-size: 3.8rem;
+    line-height: 4rem;
+} */

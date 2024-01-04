@@ -7,7 +7,7 @@
 }
 
 .v-left {
-    flex: 1
+    flex: 1;
 }
 
 .v-right {
@@ -53,4 +53,15 @@
 .accordion-expanded {
     box-shadow: var(--shadow);
     border-radius: 6px;
+}
+
+.v-container {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .v-container {
+        flex-direction: row;
+    }
 }

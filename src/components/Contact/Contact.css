@@ -1,24 +1,32 @@
 .c-left {
     gap: 0.8rem;
-    flex: 1
+    /* flex: 1; */
+    width: 100%;
 }
 
 .c-right {
     flex: 1;
+} 
+
+
+.contact-row {
+    display: flex;
+    justify-content: center;
     width: 100%;
+    /* background-color: red; */
 }
 
 .contact-modes {
-    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     gap: 1rem;
 }
 
-.contact-modes .row {
-    gap: 1.5rem;
-}
-
 .mode {
-    width: 16rem;
+    width: 13rem;
     padding: 1rem;
     border: 0.8px solid rgba(128,128,128,0.143);
     border-radius: 5px;
@@ -54,4 +62,17 @@
     background: var(--blue-gradient);
     color: white;
     scale: 0.8;
+}
+
+@media (min-width: 1024px) {
+    .contact-modes {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+
+    }
+
+    .c-left {
+        flex: 1;
+    }
 }
